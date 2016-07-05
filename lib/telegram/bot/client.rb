@@ -59,7 +59,7 @@ module Telegram
 
       def log_incoming_message(message)
         logger.info(
-          format('Incoming message: text="%s" uid=%i', message, message.from.id)
+          format('Incoming message: text="%s"', message)
         )
       end
     end
